@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Tablero de Contenidos</title>
+
+    <style>
+        /* Configuración de la página: Fondo gris claro y centrado de elementos */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5; /* Color de fondo similar al de Facebook */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+            margin: 0;
+        }
+
+        /* Estilo del título principal */
+        h1 {
+            color: #1c1e21;
+            font-size: 28px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        /* Contenedor Flexible: Organiza las tarjetas y permite que se ajusten al ancho de la pantalla */
+        .container {
+            display: flex;
+            flex-wrap: wrap; /* Si no caben, las tarjetas bajan a la siguiente fila */
+            justify-content: center;
+            gap: 25px; /* Espacio entre tarjetas */
+            max-width: 1200px;
+        }
+
+        /* Diseño de la Tarjeta (Card): Contenedor individual para cada página de Facebook */
+        .fb-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            padding: 10px;
+            border: 1px solid #ddd;
+            width: 340px; /* Ancho fijo para coincidir con el plugin de Facebook */
+        }
+
+        /* Títulos secundarios dentro de las tarjetas */
+        h2 {
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        /* Clases de colores para identificar cada temática */
+        .terror-title { color: #8b0000; }   /* Rojo para Terror */
+        .manual-title { color: #9b51e0; }   /* Morado para Manualidades */
+        .recetas-title { color: #f2994a; }  /* Naranja para Cocina */
+    </style>
+</head>
+<body>
+
+    <h1>Mis Contenidos Favoritos</h1>
+
+    <div class="container">
+        
+        <div class="fb-card">
+            <h2 class="terror-title">Relatos de la Noche 🕯️</h2>
+            <iframe 
+                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FRelatosDeLaNoche&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" 
+                width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+            </iframe>
+        </div>
+
+        <div class="fb-card">
+            <h2 class="manual-title">Manualidades (Crafty Panda) 🎨</h2>
+            <iframe 
+                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcraftypanda&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" 
+                width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+            </iframe>
+        </div>
+
+        <div class="fb-card">
+            <h2 class="recetas-title">Recetas de Cocina 🍳</h2>
+            <iframe 
+                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fkiwilimon&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" 
+                width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+            </iframe>
+        </div>
+
+    </div>
+
+    <p style="margin-top: 40px; font-size: 13px; color: #888; text-align: center;">
+        
+</body>
+</html>
